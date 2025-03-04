@@ -10,7 +10,13 @@ const Navbar = () => {
     <>
       <nav className="flex h-24 w-full items-end justify-center space-x-10 bg-white dark:bg-black dark:text-white">
         <div>
-          <Link href="/">Image Home</Link>
+          <Link href="/">
+            <img
+              src="/images/Icon Đại Học Văn Lang.png"
+              alt="Home"
+              className="h-23 w-23"
+            />
+          </Link>
         </div>
         <div>
           <NavigationNavbar />
@@ -18,7 +24,7 @@ const Navbar = () => {
         <div className="h-[42px]">
           <Language />
         </div>
-        <div className="font-playfair-medium-italic h-[42px]">
+        <div className="font-playfair-semi-bold-italic h-[42px]">
           <Search />
         </div>
         <div className="h-[42px]">

@@ -15,7 +15,7 @@ const NavigationNavbar = () => {
   return (
     <div>
       <NavigationMenu>
-        <NavigationMenuList className="font-playfair-italic flex h-24 w-full items-end justify-center space-x-10">
+        <NavigationMenuList className="font-playfair-semi-bold-italic flex h-24 w-full items-end justify-center space-x-10">
           <NavigationMenuItem>
             <NavigationMenuTrigger asChild>
               <Link href="/">Live fully in Vietnam</Link>
