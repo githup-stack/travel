@@ -21,7 +21,7 @@ const Navbar = () => {
         <div className="font-playfair-medium-italic h-[42px]">
           <Search />
         </div>
-        <div className="h-[43px]">
+        <div className="h-[42px]">
           <Theme />
         </div>
       </nav>
