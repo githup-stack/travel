@@ -1,10 +1,10 @@
 "use client";
 
+import Input from "@/components/ui/input";
 import React from "react";
-import { Input } from "@/components/ui/input";
 
 const Search = () => {
-  return <Input type="search" placeholder="Search" />;
+  return <Input type="search" iconSrc="/icons/search.svg" />;
 };
 
 export default Search;

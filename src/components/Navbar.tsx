@@ -11,11 +11,7 @@ const Navbar = () => {
       <nav className="flex h-24 w-full items-end justify-center space-x-10 bg-white dark:bg-black dark:text-white">
         <div>
           <Link href="/">
-            <img
-              src="/images/Icon Đại Học Văn Lang.png"
-              alt="Home"
-              className="h-23 w-23"
-            />
+            <img src="/images/Home.png" alt="Home" className="h-23 w-23" />
           </Link>
         </div>
         <div>
