@@ -19,15 +19,15 @@ const Navbar = () => {
           <NavigationNavbar />
         </div>
 
-        <div className="ml-197 flex space-x-1">
+        <div className="ml-216 flex space-x-1">
+          <div className="font-playfair-semi-bold-italic h-[42px]">
+            <Search />
+          </div>
           <div className="h-[42px] text-black dark:text-white">
             <Language />
           </div>
           <div className="h-[42px] text-black dark:text-white">
             <Theme />
-          </div>
-          <div className="font-playfair-semi-bold-italic h-[42px]">
-            <Search />
           </div>
         </div>
       </nav>
