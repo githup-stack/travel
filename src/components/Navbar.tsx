@@ -9,7 +9,7 @@ const Navbar = () => {
   return (
     <>
       <nav className="relative flex h-24 w-full items-end bg-white px-10 dark:bg-black dark:text-white">
-        <div className="ml-40">
+        <div className="ml-40 pb-0.5">
           <Link href="/">
             <img src="/images/Home.png" alt="Home" className="h-22 w-22" />
           </Link>

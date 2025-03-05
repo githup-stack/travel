@@ -22,36 +22,37 @@ const NavigationNavbar = () => {
                 Live fully in Vietnam
               </Link>
             </NavigationMenuTrigger>
-            <NavigationMenuContent className="bg-menu-nav absolute top-full mt-0.5 w-full p-6 shadow-lg transition-all duration-300">
-              <ul className="font-playfair-regular textMenuBar grid grid-cols-4 gap-6">
-                <li>
-                  <NavigationMenuLink asChild>
-                    <Link href="/liveFullyInVietNamese/vietNamNow">
-                      Vietnam now
-                    </Link>
-                  </NavigationMenuLink>
-                </li>
-                <li>
-                  <NavigationMenuLink asChild>
-                    <Link href="/liveFullyInVietNamese/whyNotVietNam">
-                      Why not Vietnam
-                    </Link>
-                  </NavigationMenuLink>
-                </li>
-                <li>
-                  <NavigationMenuLink asChild>
-                    <Link href="/liveFullyInVietNamese/myVietNam">
-                      My Vietnam
-                    </Link>
-                  </NavigationMenuLink>
-                </li>
-                <li>
-                  <NavigationMenuLink asChild>
-                    <Link href="/liveFullyInVietNamese/virtualVietNam">
-                      Virtual Vietnam
-                    </Link>
-                  </NavigationMenuLink>
-                </li>
+            <NavigationMenuContent className="bg-menu-nav absolute right-0 left-0 mt-0.5 shadow-lg">
+              <ul className="bg-menu-nav-hover grid grid-cols-4 gap-px text-center">
+                {[
+                  {
+                    href: "/liveFullyInVietNamese/vietNamNow",
+                    label: "Vietnam now",
+                  },
+                  {
+                    href: "/liveFullyInVietNamese/whyNotVietNam",
+                    label: "Why not Vietnam",
+                  },
+                  {
+                    href: "/liveFullyInVietNamese/myVietNam",
+                    label: "My Vietnam",
+                  },
+                  {
+                    href: "/liveFullyInVietNamese/virtualVietNam",
+                    label: "Virtual Vietnam",
+                  },
+                ].map((item) => (
+                  <li key={item.href}>
+                    <NavigationMenuLink asChild>
+                      <Link
+                        href={item.href}
+                        className="block p-4 hover:bg-gray-100"
+                      >
+                        {item.label}
+                      </Link>
+                    </NavigationMenuLink>
+                  </li>
+                ))}
               </ul>
             </NavigationMenuContent>
           </NavigationMenuItem>
