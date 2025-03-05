@@ -15,13 +15,15 @@ const NavigationNavbar = () => {
   return (
     <div>
       <NavigationMenu>
-        <NavigationMenuList className="font-playfair-semi-bold-italic flex h-24 w-full items-end justify-center space-x-10">
-          <NavigationMenuItem>
+        <NavigationMenuList className="font-playfair-semi-bold-italic flex h-24 w-full items-end justify-center">
+          <NavigationMenuItem className="bg-menu-nav-hover h-full px-5">
             <NavigationMenuTrigger asChild>
-              <Link href="/">Live fully in Vietnam</Link>
+              <Link href="/" className="flex h-full items-end">
+                Live fully in Vietnam
+              </Link>
             </NavigationMenuTrigger>
-            <NavigationMenuContent className="absolute top-full mt-0.5 w-full bg-amber-50 p-6 shadow-lg transition-all duration-300">
-              <ul className="font-playfair-regular textMenuBar grid grid-cols-2 gap-6 text-lg font-medium">
+            <NavigationMenuContent className="bg-menu-nav absolute top-full mt-0.5 w-full p-6 shadow-lg transition-all duration-300">
+              <ul className="font-playfair-regular textMenuBar grid grid-cols-4 gap-6">
                 <li>
                   <NavigationMenuLink asChild>
                     <Link href="/liveFullyInVietNamese/vietNamNow">
@@ -54,11 +56,13 @@ const NavigationNavbar = () => {
             </NavigationMenuContent>
           </NavigationMenuItem>
 
-          <NavigationMenuItem>
+          <NavigationMenuItem className="bg-menu-nav-hover h-full px-5">
             <NavigationMenuTrigger asChild>
-              <Link href="/placesToGo">Places to go</Link>
+              <Link href="/placesToGo" className="flex h-full items-end">
+                Places to go
+              </Link>
             </NavigationMenuTrigger>
-            <NavigationMenuContent className="absolute top-full mt-0.5 w-full bg-amber-50 p-6 shadow-lg transition-all duration-300">
+            <NavigationMenuContent className="bg-menu-nav absolute top-full mt-0.5 w-full p-6 shadow-lg transition-all duration-300">
               <ul className="font-playfair-regular textMenuBar grid grid-cols-2 gap-6 text-lg font-medium">
                 <li>
                   <NavigationMenuLink asChild>
@@ -79,11 +83,16 @@ const NavigationNavbar = () => {
             </NavigationMenuContent>
           </NavigationMenuItem>
 
-          <NavigationMenuItem>
+          <NavigationMenuItem className="bg-menu-nav-hover h-full px-5">
             <NavigationMenuTrigger asChild>
-              <Link href="/vietnameseTraditions">Vietnamese traditions</Link>
+              <Link
+                href="/vietnameseTraditions"
+                className="flex h-full items-end"
+              >
+                Vietnamese traditions
+              </Link>
             </NavigationMenuTrigger>
-            <NavigationMenuContent className="absolute top-full mt-0.5 w-full bg-amber-50 p-6 shadow-lg transition-all duration-300">
+            <NavigationMenuContent className="bg-menu-nav absolute top-full mt-0.5 w-full p-6 shadow-lg transition-all duration-300">
               <ul className="font-playfair-regular textMenuBar grid grid-cols-2 gap-6 text-lg font-medium">
                 <li>
                   <NavigationMenuLink asChild>
@@ -101,11 +110,13 @@ const NavigationNavbar = () => {
             </NavigationMenuContent>
           </NavigationMenuItem>
 
-          <NavigationMenuItem>
+          <NavigationMenuItem className="bg-menu-nav-hover h-full px-5">
             <NavigationMenuTrigger asChild>
-              <Link href="/planYourTrip">Plan your trip</Link>
+              <Link href="/planYourTrip" className="flex h-full items-end">
+                Plan your trip
+              </Link>
             </NavigationMenuTrigger>
-            <NavigationMenuContent className="absolute top-full mt-0.5 w-full bg-amber-50 p-6 shadow-lg transition-all duration-300">
+            <NavigationMenuContent className="bg-menu-nav absolute top-full mt-0.5 w-full p-6 shadow-lg transition-all duration-300">
               <ul className="font-playfair-regular textMenuBar grid grid-cols-2 gap-6 text-lg font-medium">
                 <li>
                   <NavigationMenuLink asChild>
@@ -158,9 +169,11 @@ const NavigationNavbar = () => {
             </NavigationMenuContent>
           </NavigationMenuItem>
 
-          <NavigationMenuItem>
+          <NavigationMenuItem className="bg-menu-nav-hover h-full px-5">
             <NavigationMenuLink asChild>
-              <Link href="/travelOffers">Travel offers</Link>
+              <Link href="/travelOffers" className="flex h-full items-end">
+                Travel offers
+              </Link>
             </NavigationMenuLink>
           </NavigationMenuItem>
         </NavigationMenuList>
