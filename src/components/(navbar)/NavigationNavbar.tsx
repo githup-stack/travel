@@ -8,6 +8,12 @@ import {
   NavigationMenuContent,
   NavigationMenuLink,
 } from "@radix-ui/react-navigation-menu";
+import {
+  ResizableHandle,
+  ResizablePanel,
+  ResizablePanelGroup,
+} from "@/components/ui/resizable";
+
 import Link from "next/link";
 import React from "react";
 
@@ -22,38 +28,71 @@ const NavigationNavbar = () => {
                 Live fully in Vietnam
               </Link>
             </NavigationMenuTrigger>
-            <NavigationMenuContent className="bg-menu-nav absolute right-0 left-0 mt-0.5 shadow-lg">
-              <ul className="bg-menu-nav-hover grid grid-cols-4 gap-px text-center">
-                {[
-                  {
-                    href: "/liveFullyInVietNamese/vietNamNow",
-                    label: "Vietnam now",
-                  },
-                  {
-                    href: "/liveFullyInVietNamese/whyNotVietNam",
-                    label: "Why not Vietnam",
-                  },
-                  {
-                    href: "/liveFullyInVietNamese/myVietNam",
-                    label: "My Vietnam",
-                  },
-                  {
-                    href: "/liveFullyInVietNamese/virtualVietNam",
-                    label: "Virtual Vietnam",
-                  },
-                ].map((item) => (
-                  <li key={item.href}>
-                    <NavigationMenuLink asChild>
-                      <Link
-                        href={item.href}
-                        className="block p-4 hover:bg-gray-100"
-                      >
-                        {item.label}
-                      </Link>
-                    </NavigationMenuLink>
-                  </li>
-                ))}
-              </ul>
+            <NavigationMenuContent className="bg-menu-nav absolute right-0 left-0 mt-0.5">
+              <div className="flex">
+                <ul className="bg-menu-nav-hover w-40.5">
+                  {[
+                    {
+                      href: "/liveFullyInVietNamese/vietNamNow",
+                      label: "Vietnam now",
+                    },
+                    {
+                      href: "/liveFullyInVietNamese/whyNotVietNam",
+                      label: "Why not Vietnam",
+                    },
+                    {
+                      href: "/liveFullyInVietNamese/myVietNam",
+                      label: "My Vietnam",
+                    },
+                    {
+                      href: "/liveFullyInVietNamese/virtualVietNam",
+                      label: "Virtual Vietnam",
+                    },
+                  ].map((item) => (
+                    <li key={item.href}>
+                      <NavigationMenuLink asChild>
+                        <Link
+                          href={item.href}
+                          className="block p-2 hover:bg-gray-100"
+                        >
+                          {item.label}
+                        </Link>
+                      </NavigationMenuLink>
+                    </li>
+                  ))}
+                </ul>
+                <ul>
+                  <Link href={"/liveFullyInVietNamese/sea"}>
+                    Vietnam's East Sea
+                  </Link>
+                  <ResizablePanelGroup
+                    direction="horizontal"
+                    className="max-w-md rounded-lg border md:min-w-[450px]"
+                  >
+                    <ResizablePanel defaultSize={50}>
+                      <div className="flex h-[200px] items-center justify-center p-6">
+                        <span className="font-semibold">One</span>
+                      </div>
+                    </ResizablePanel>
+                    <ResizableHandle />
+                    <ResizablePanel defaultSize={50}>
+                      <ResizablePanelGroup direction="vertical">
+                        <ResizablePanel defaultSize={25}>
+                          <div className="flex h-full items-center justify-center p-6">
+                            <span className="font-semibold">Two</span>
+                          </div>
+                        </ResizablePanel>
+                        <ResizableHandle />
+                        <ResizablePanel defaultSize={75}>
+                          <div className="flex h-full items-center justify-center p-6">
+                            <span className="font-semibold">Three</span>
+                          </div>
+                        </ResizablePanel>
+                      </ResizablePanelGroup>
+                    </ResizablePanel>
+                  </ResizablePanelGroup>
+                </ul>
+              </div>
             </NavigationMenuContent>
           </NavigationMenuItem>
 
