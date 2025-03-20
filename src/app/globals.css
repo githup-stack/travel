@@ -246,15 +246,3 @@ input[type="search"]::-ms-reveal {
 input[type="search"]::-moz-search-clear-button {
   display: none;
 }
-
-.bg-home {
-  background-color: #f8fafc;
-}
-
-.bg-menu-nav {
-  background-color: #ebebeb;
-}
-
-.bg-menu-nav-hover:hover {
-  background-color: #ebebeb;
-}

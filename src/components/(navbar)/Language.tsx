@@ -33,6 +33,9 @@ export function Language() {
           Tiếng Việt
         </DropdownMenuItem>
       </DropdownMenuContent>
+      <div className="mt-2 text-sm" style={{ display: "none" }}>
+        Ngôn ngữ hiện tại: {language}
+      </div>
     </DropdownMenu>
   );
 }

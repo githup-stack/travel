@@ -9,18 +9,18 @@ import Search from "@/components/(navbar)/Search";
 const Navbar = () => {
   return (
     <>
-      <nav className="relative flex h-24 w-full items-end bg-white px-10 dark:bg-black dark:text-white">
+      <nav className="flex h-24 w-full items-end justify-between bg-white px-10 dark:bg-black dark:text-white">
         <div className="ml-40 pb-0.5">
           <Link href="/">
             <Image src="/images/Home.png" alt="Home" width={80} height={80} />
           </Link>
         </div>
 
-        <div className="absolute left-1/2 -translate-x-1/2">
+        <div>
           <NavigationNavbar />
         </div>
 
-        <div className="ml-216 flex space-x-1">
+        <div className="flex space-x-1">
           <div className="font-playfair-semi-bold-italic h-[42px]">
             <Search />
           </div>
