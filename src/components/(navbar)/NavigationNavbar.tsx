@@ -118,24 +118,121 @@ const NavigationNavbar = () => {
                 </Link>
               </NavigationMenuTrigger>
               <NavigationMenuContent>
-                <div className="textMenuBar absolute mt-0.5 bg-white dark:bg-black dark:text-white">
-                  <ul>
-                    <li>
-                      <NavigationMenuLink asChild>
-                        <Link href="/placesToGo/Central">Central</Link>
-                      </NavigationMenuLink>
-                    </li>
-                    <li>
-                      <NavigationMenuLink asChild>
-                        <Link href="/placesToGo/Northern">Northern</Link>
-                      </NavigationMenuLink>
-                    </li>
-                    <li>
-                      <NavigationMenuLink asChild>
-                        <Link href="/placesToGo/Southern">Southern</Link>
-                      </NavigationMenuLink>
-                    </li>
-                  </ul>
+                <div className="textMenuBar fixed top-24 right-0 left-0 z-50 mt-0.5 w-screen bg-white p-6 shadow-md dark:bg-black dark:text-white">
+                  <div className="mx-auto max-w-7xl">
+                    <div className="grid grid-cols-3 gap-10">
+                      <div>
+                        <h3 className="mb-4 border-b pb-2 text-lg font-bold">
+                          Northern Vietnam
+                        </h3>
+                        <ul className="space-y-3">
+                          <li className="transition-colors hover:text-red-500">
+                            <NavigationMenuLink asChild>
+                              <Link
+                                href="/placesToGo/Northern"
+                                className="block"
+                              >
+                                Northern
+                              </Link>
+                            </NavigationMenuLink>
+                          </li>
+                          <li className="transition-colors hover:text-red-500">
+                            <NavigationMenuLink asChild>
+                              <Link
+                                href="/placesToGo/Northern/Hanoi"
+                                className="block"
+                              >
+                                Hanoi
+                              </Link>
+                            </NavigationMenuLink>
+                          </li>
+                          <li className="transition-colors hover:text-red-500">
+                            <NavigationMenuLink asChild>
+                              <Link
+                                href="/placesToGo/Northern/Sapa"
+                                className="block"
+                              >
+                                Sapa
+                              </Link>
+                            </NavigationMenuLink>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div>
+                        <h3 className="mb-4 border-b pb-2 text-lg font-bold">
+                          Central Vietnam
+                        </h3>
+                        <ul className="space-y-3">
+                          <li className="transition-colors hover:text-red-500">
+                            <NavigationMenuLink asChild>
+                              <Link
+                                href="/placesToGo/Central"
+                                className="block"
+                              >
+                                Central
+                              </Link>
+                            </NavigationMenuLink>
+                          </li>
+                          <li className="transition-colors hover:text-red-500">
+                            <NavigationMenuLink asChild>
+                              <Link
+                                href="/placesToGo/Central/DaNang"
+                                className="block"
+                              >
+                                Da Nang
+                              </Link>
+                            </NavigationMenuLink>
+                          </li>
+                          <li className="transition-colors hover:text-red-500">
+                            <NavigationMenuLink asChild>
+                              <Link
+                                href="/placesToGo/Central/HoiAn"
+                                className="block"
+                              >
+                                Hoi An
+                              </Link>
+                            </NavigationMenuLink>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div>
+                        <h3 className="mb-4 border-b pb-2 text-lg font-bold">
+                          Southern Vietnam
+                        </h3>
+                        <ul className="space-y-3">
+                          <li className="transition-colors hover:text-red-500">
+                            <NavigationMenuLink asChild>
+                              <Link
+                                href="/placesToGo/Southern"
+                                className="block"
+                              >
+                                Southern
+                              </Link>
+                            </NavigationMenuLink>
+                          </li>
+                          <li className="transition-colors hover:text-red-500">
+                            <NavigationMenuLink asChild>
+                              <Link
+                                href="/placesToGo/Southern/HoChiMinh"
+                                className="block"
+                              >
+                                Ho Chi Minh City
+                              </Link>
+                            </NavigationMenuLink>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div className="mt-8 grid grid-cols-4 gap-4">
+                      <div className="h-40 overflow-hidden rounded-lg bg-gray-100"></div>
+                      <div className="h-40 overflow-hidden rounded-lg bg-gray-100"></div>
+                      <div className="h-40 overflow-hidden rounded-lg bg-gray-100"></div>
+                      <div className="h-40 overflow-hidden rounded-lg bg-gray-100"></div>
+                    </div>
+                  </div>
                 </div>
               </NavigationMenuContent>
             </NavigationMenuItem>
@@ -148,23 +245,90 @@ const NavigationNavbar = () => {
                 </Link>
               </NavigationMenuTrigger>
               <NavigationMenuContent>
-                <div className="textMenuBar absolute mt-0.5 bg-white dark:bg-black dark:text-white">
-                  <ul>
-                    <li>
-                      <NavigationMenuLink asChild>
-                        <Link href="/vietnameseTraditions/highlights">
-                          Highlights
-                        </Link>
-                      </NavigationMenuLink>
-                    </li>
-                    <li>
-                      <NavigationMenuLink asChild>
-                        <Link href="/vietnameseTraditions/holidays">
-                          Holidays
-                        </Link>
-                      </NavigationMenuLink>
-                    </li>
-                  </ul>
+                <div className="textMenuBar fixed top-24 right-0 left-0 z-50 mt-0.5 w-screen bg-white p-6 shadow-md dark:bg-black dark:text-white">
+                  <div className="mx-auto max-w-7xl">
+                    <div className="grid grid-cols-3 gap-10">
+                      <div>
+                        <h3 className="mb-4 border-b pb-2 text-lg font-bold">
+                          Cultural Events
+                        </h3>
+                        <ul className="space-y-3">
+                          <li className="transition-colors hover:text-red-500">
+                            <NavigationMenuLink asChild>
+                              <Link
+                                href="/vietnameseTraditions/highlights"
+                                className="block"
+                              >
+                                Highlights
+                              </Link>
+                            </NavigationMenuLink>
+                          </li>
+                          <li className="transition-colors hover:text-red-500">
+                            <NavigationMenuLink asChild>
+                              <Link
+                                href="/vietnameseTraditions/holidays"
+                                className="block"
+                              >
+                                Holidays
+                              </Link>
+                            </NavigationMenuLink>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div>
+                        <h3 className="mb-4 border-b pb-2 text-lg font-bold">
+                          Local Cuisine
+                        </h3>
+                        <ul className="space-y-3">
+                          <li className="transition-colors hover:text-red-500">
+                            <NavigationMenuLink asChild>
+                              <Link
+                                href="/vietnameseTraditions/cuisine/north"
+                                className="block"
+                              >
+                                Northern Cuisine
+                              </Link>
+                            </NavigationMenuLink>
+                          </li>
+                          <li className="transition-colors hover:text-red-500">
+                            <NavigationMenuLink asChild>
+                              <Link
+                                href="/vietnameseTraditions/cuisine/south"
+                                className="block"
+                              >
+                                Southern Cuisine
+                              </Link>
+                            </NavigationMenuLink>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div>
+                        <h3 className="mb-4 border-b pb-2 text-lg font-bold">
+                          Arts & Crafts
+                        </h3>
+                        <ul className="space-y-3">
+                          <li className="transition-colors hover:text-red-500">
+                            <NavigationMenuLink asChild>
+                              <Link
+                                href="/vietnameseTraditions/arts"
+                                className="block"
+                              >
+                                Traditional Arts
+                              </Link>
+                            </NavigationMenuLink>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div className="mt-8 grid grid-cols-3 gap-4">
+                      <div className="h-40 overflow-hidden rounded-lg bg-gray-100"></div>
+                      <div className="h-40 overflow-hidden rounded-lg bg-gray-100"></div>
+                      <div className="h-40 overflow-hidden rounded-lg bg-gray-100"></div>
+                    </div>
+                  </div>
                 </div>
               </NavigationMenuContent>
             </NavigationMenuItem>
@@ -177,58 +341,104 @@ const NavigationNavbar = () => {
                 </Link>
               </NavigationMenuTrigger>
               <NavigationMenuContent>
-                <div className="textMenuBar absolute mt-0.5 bg-white dark:bg-black dark:text-white">
-                  <ul>
-                    <li>
-                      <NavigationMenuLink asChild>
-                        <Link href="/planYourTrip/eVisaApplications">
-                          eVisa Applications
-                        </Link>
-                      </NavigationMenuLink>
-                    </li>
-                    <li>
-                      <NavigationMenuLink asChild>
-                        <Link href="/planYourTrip/gettingAroundVietnam">
-                          Getting Around Vietnam
-                        </Link>
-                      </NavigationMenuLink>
-                    </li>
-                    <li>
-                      <NavigationMenuLink asChild>
-                        <Link href="/planYourTrip/gettingToVietnam">
-                          Getting to Vietnam
-                        </Link>
-                      </NavigationMenuLink>
-                    </li>
-                    <li>
-                      <NavigationMenuLink asChild>
-                        <Link href="/planYourTrip/healthyAndSafety">
-                          Healthy and Safety
-                        </Link>
-                      </NavigationMenuLink>
-                    </li>
-                    <li>
-                      <NavigationMenuLink asChild>
-                        <Link href="/planYourTrip/itineraries">
-                          Itineraries
-                        </Link>
-                      </NavigationMenuLink>
-                    </li>
-                    <li>
-                      <NavigationMenuLink asChild>
-                        <Link href="/planYourTrip/vietnamesePhrases">
-                          Vietnamese Phrases
-                        </Link>
-                      </NavigationMenuLink>
-                    </li>
-                    <li>
-                      <NavigationMenuLink asChild>
-                        <Link href="/planYourTrip/visaRequirements">
-                          Visa Requirements
-                        </Link>
-                      </NavigationMenuLink>
-                    </li>
-                  </ul>
+                <div className="textMenuBar fixed top-24 right-0 left-0 z-50 mt-0.5 w-screen bg-white p-6 shadow-md dark:bg-black dark:text-white">
+                  <div className="mx-auto max-w-7xl">
+                    <div className="grid grid-cols-3 gap-10">
+                      <div>
+                        <h3 className="mb-4 border-b pb-2 text-lg font-bold">
+                          Before You Go
+                        </h3>
+                        <ul className="space-y-3">
+                          <li className="transition-colors hover:text-red-500">
+                            <NavigationMenuLink asChild>
+                              <Link
+                                href="/planYourTrip/eVisaApplications"
+                                className="block"
+                              >
+                                eVisa Applications
+                              </Link>
+                            </NavigationMenuLink>
+                          </li>
+                          <li className="transition-colors hover:text-red-500">
+                            <NavigationMenuLink asChild>
+                              <Link
+                                href="/planYourTrip/visaRequirements"
+                                className="block"
+                              >
+                                Visa Requirements
+                              </Link>
+                            </NavigationMenuLink>
+                          </li>
+                          <li className="transition-colors hover:text-red-500">
+                            <NavigationMenuLink asChild>
+                              <Link
+                                href="/planYourTrip/healthyAndSafety"
+                                className="block"
+                              >
+                                Healthy and Safety
+                              </Link>
+                            </NavigationMenuLink>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div>
+                        <h3 className="mb-4 border-b pb-2 text-lg font-bold">
+                          Transportation
+                        </h3>
+                        <ul className="space-y-3">
+                          <li className="transition-colors hover:text-red-500">
+                            <NavigationMenuLink asChild>
+                              <Link
+                                href="/planYourTrip/gettingToVietnam"
+                                className="block"
+                              >
+                                Getting to Vietnam
+                              </Link>
+                            </NavigationMenuLink>
+                          </li>
+                          <li className="transition-colors hover:text-red-500">
+                            <NavigationMenuLink asChild>
+                              <Link
+                                href="/planYourTrip/gettingAroundVietnam"
+                                className="block"
+                              >
+                                Getting Around Vietnam
+                              </Link>
+                            </NavigationMenuLink>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div>
+                        <h3 className="mb-4 border-b pb-2 text-lg font-bold">
+                          Useful Resources
+                        </h3>
+                        <ul className="space-y-3">
+                          <li className="transition-colors hover:text-red-500">
+                            <NavigationMenuLink asChild>
+                              <Link
+                                href="/planYourTrip/itineraries"
+                                className="block"
+                              >
+                                Itineraries
+                              </Link>
+                            </NavigationMenuLink>
+                          </li>
+                          <li className="transition-colors hover:text-red-500">
+                            <NavigationMenuLink asChild>
+                              <Link
+                                href="/planYourTrip/vietnamesePhrases"
+                                className="block"
+                              >
+                                Vietnamese Phrases
+                              </Link>
+                            </NavigationMenuLink>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </NavigationMenuContent>
             </NavigationMenuItem>
