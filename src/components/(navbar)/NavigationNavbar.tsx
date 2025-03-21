@@ -31,9 +31,12 @@ const NavigationNavbar = () => {
             </NavigationMenuTrigger>
             <NavigationMenuContent>
               <div className="textMenuBar absolute mt-0.5 w-full rounded-b-lg bg-white p-6 shadow-md dark:bg-black dark:text-white">
-                <div className="flex">
+                <div className="flex gap-8">
                   <div className="w-64">
-                    <ul className="space-y-15">
+                    <h3 className="font-playfair-semi-bold-italic mb-4 border-b pb-2">
+                      Explore Vietnam
+                    </h3>
+                    <ul>
                       {[
                         {
                           href: "/liveFullyInVietNamese/vietNamNow",
@@ -52,9 +55,16 @@ const NavigationNavbar = () => {
                           label: "Virtual Vietnam",
                         },
                       ].map((item) => (
-                        <li key={item.href}>
+                        <li
+                          key={item.href}
+                          className="group/item relative transition-colors hover:bg-gray-50 dark:hover:bg-gray-800"
+                        >
+                          <div className="absolute inset-y-0 left-0 w-0.5 bg-red-500 opacity-0 transition-opacity duration-200 group-hover/item:opacity-100"></div>
                           <NavigationMenuLink asChild>
-                            <Link href={item.href} className="block">
+                            <Link
+                              href={item.href}
+                              className="block w-full px-3 py-3 transition-colors"
+                            >
                               {item.label}
                             </Link>
                           </NavigationMenuLink>
@@ -63,10 +73,15 @@ const NavigationNavbar = () => {
                     </ul>
                   </div>
 
-                  <div>
-                    <Link href="/liveFullyInVietNamese/sea">
-                      Vietnam&#39;s East Sea
-                    </Link>
+                  <div className="w-[500px]">
+                    <h3 className="font-playfair-semi-bold-italic mb-4 border-b pb-2">
+                      <Link
+                        href="/liveFullyInVietNamese/sea"
+                        className="transition-colors hover:text-red-500"
+                      >
+                        Vietnam&#39;s East Sea
+                      </Link>
+                    </h3>
 
                     <div className="mt-5">
                       <ResizablePanelGroup
