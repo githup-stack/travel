@@ -75,12 +75,14 @@ const NavigationNavbar = () => {
 
                   <div className="w-[500px]">
                     <h3 className="font-playfair-semi-bold-italic mb-4 border-b pb-2">
-                      <Link
-                        href="/liveFullyInVietNamese/sea"
-                        className="transition-colors hover:text-red-500"
-                      >
-                        Vietnam&#39;s East Sea
-                      </Link>
+                      <NavigationMenuLink asChild>
+                        <Link
+                          href="/liveFullyInVietNamese/sea"
+                          className="transition-colors hover:text-red-500"
+                        >
+                          Vietnam&#39;s East Sea
+                        </Link>
+                      </NavigationMenuLink>
                     </h3>
 
                     <div className="mt-5">
